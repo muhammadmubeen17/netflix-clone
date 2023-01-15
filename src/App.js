@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   createBrowserRouter,
+  createHashRouter,
   Navigate,
   RouterProvider,
 } from "react-router-dom";
@@ -9,26 +10,26 @@ import SignIn from './screens/SignIn';
 import LoginHelp from './screens/LoginHelp';
 import './App.css';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/netflix-clone/pk",
+    path: "/pk",
     element: <Signup />,
   },
   {
-    path: "/netflix-clone/",
-    element: <Navigate to="/netflix-clone/pk" replace />,
+    path: "/",
+    element: <Navigate to="/pk" replace />,
   },
   {
-    path: "/netflix-clone/pk/login",
+    path: "/pk/login",
     element: <SignIn />,
   },
   {
-    path: "/netflix-clone/pk/LoginHelp",
+    path: "/pk/LoginHelp",
     element: <LoginHelp />,
   },
   {
     path: "*",
-    element: <Navigate to="/netflix-clone/" replace />
+    element: <Navigate to="/" replace />
   },
 ]);
 
