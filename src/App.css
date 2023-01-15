@@ -1,0 +1,67 @@
+#header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./assets/images/header_background.jpg");
+  background-size: cover;
+}
+
+#login-help__header {
+  background-image: url("./assets/images/login-help_bg.jpg");
+  background-size: cover;
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.reset-password-option input[type="radio"]:focus + label::before {
+  border-color: grey;
+  box-shadow: 0 0 5px 2px rgb(150 200 255 / 60%);
+}
+
+.reset-password-option input[type="radio"] + label::before {
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  content: "";
+  display: block;
+  left: 0px;
+  padding: 0;
+  position: absolute;
+  top: 1px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+
+.reset-password-option input[type="radio"]:checked + label::after {
+  background-color: #0080ff;
+  border-radius: 50%;
+  content: "";
+  height: 15px;
+  left: 5px;
+  top: 6px;
+  position: absolute;
+  width: 15px;
+}
+
+.bg-gradient-blue {
+  background-image: linear-gradient(180deg, #0080ff, #0277ec);
+}
+
+.btn-blue {
+  background-color: #0080ff;
+  background-image: linear-gradient(180deg, #0080ff, #0277ec);
+  box-shadow: 0 1px 0 rgb(0 0 0 / 55%);
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background: #2490fd;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 55%);
+}
