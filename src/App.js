@@ -11,24 +11,24 @@ import './App.css';
 
 const router = createBrowserRouter([
   {
-    path: "/pk",
+    path: "/netflix-clone/pk",
     element: <Signup />,
   },
   {
-    path: "/",
-    element: <Navigate to="/pk" replace />,
+    path: "/netflix-clone/",
+    element: <Navigate to="/netflix-clone/pk" replace />,
   },
   {
-    path: "/pk/login",
+    path: "/netflix-clone/pk/login",
     element: <SignIn />,
   },
   {
-    path: "/pk/LoginHelp",
+    path: "/netflix-clone/pk/LoginHelp",
     element: <LoginHelp />,
   },
   {
     path: "*",
-    element: <Navigate to="/" replace />
+    element: <Navigate to="/netflix-clone/" replace />
   },
 ]);
 
